@@ -1,0 +1,8 @@
+pull_request_rules:
+  - name: F1 merge on approval + label
+    conditions:
+      - "#approved-reviews-by>=1"
+      - "label=go"
+    actions:
+      merge:
+        method: merge
